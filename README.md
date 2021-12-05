@@ -1,4 +1,4 @@
-# post is japanese zipcode search program
+# post command is japanese zipcode search program
 command reference  
 post <katakana yomi with %>  
 '%' is all matching charactor  
