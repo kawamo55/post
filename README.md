@@ -2,9 +2,9 @@
 command reference  
 post <katakana yomi with %>  
 '%' is all matching charactor  
-Terget system is raspberrypi zero.  
+Terget server system is raspberrypi zero.  
 
-## Make Env.
+## Make server env.
 1.Create Database on postgresql vers version 10 or later.  
 2.create zipcode_tbl  
 psql dbname < zipcode_tbl  
