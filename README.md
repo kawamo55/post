@@ -14,5 +14,5 @@ lesten_address = 'localhost'
 change to  
 lesten_address = '*'  
 4.edit pg_hba.conf  
-add last
+add last  
 host [database name] [user name] [network address]  ['password' or 'md5']
