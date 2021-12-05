@@ -5,7 +5,7 @@ post <katakana yomi with %>
 Terget server system is raspberrypi zero.  
 
 ## Make server env.
-1.Create Database on postgresql vers version 10 or later.  
+1.Create Database on postgresql version 10 or later.  
 2.create zipcode_tbl  
 psql dbname < zipcode_tbl  
 3.edit postgresql.conf  
