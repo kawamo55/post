@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import psycopg2 as ps
+import sys
+
+host='your host'
+dbname='data base name'
+username='database user name'
+pass='password'
+
+argv=sys.argv
+argc=len(argv)
+cn=ps.connect('host={} dbname={} user={} password={}'.format(host,dbname,username,pass))
+cur=cn.cursor()
+sqls="select zipcode || '-' || tdfkname || skcsname || chyoname ret from zipcode_tbl where (tdfkyomi || skcsyomi || chyoyomi) like '%{}%'"
+
+for n in range(1,argc):
+    sql=sqls.format(argv[n])
+    print("---> {}".format(argv[n]))
+    cur.execute(sql) 
+    rows=cur.fetchall()
+    print("{}件発見".format(len(rows)))
+    c=0
+    for r in rows:
+        c += 1
+        print("{} : {}".format(c,r[0]))
+    cur.close
+
+cn.close
