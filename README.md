@@ -2,6 +2,7 @@
 command reference  
 post <katakana yomi with %>  
 '%' is all matching charactor  
+Terget system is raspberrypi zero.  
 
 ## Make Env.
 1.Create Database on postgresql vers version 10 or later.  
